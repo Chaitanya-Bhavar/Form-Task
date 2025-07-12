@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form {
+      background: black;
+      padding: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      width: 350px;
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0ff;
+      margin: 15px 0;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #2c2c2c;
+      color: #0ff;
+    }
+
+    input[type="radio"] {
+      margin-left: 5px;
+    }
+
+    .submit-btn {
+      background: #0ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .submit-btn:hover {
+      background: #0bd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form">
+    <h2>Registration Form</h2>
+    <form>
+      <label>First Name:</label>
+      <input type="text" class="input" required>
+
+      <label>Last Name:</label>
+      <input type="text" class="input" required>
+
+      <label>Gender:</label>
+      <div>
+        Male <input type="radio" name="gender">
+        Female <input type="radio" name="gender">
+        Others <input type="radio" name="gender">
+      </div>
+
+      <label>DOB:</label>
+      <input type="date" class="input">
+
+      <label>Mob:</label>
+      <input type="text" class="input">
+
+      <label>Email:</label>
+      <input type="email" class="input">
+
+      <label>Password:</label>
+      <input type="password" class="input">
+
+      <input type="submit" class="input submit-btn" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
